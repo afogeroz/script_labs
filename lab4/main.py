@@ -18,7 +18,7 @@ class MainWindow(QMainWindow):
         self.setWindowIcon(QIcon("db-file.png"))
 
         # Подключение к бд
-        db_path = "../3 LR/posts.db"
+        db_path = "../lab3/posts.db"
         self.db = QSqlDatabase.addDatabase("QSQLITE")
         self.db.setDatabaseName(db_path)
 
